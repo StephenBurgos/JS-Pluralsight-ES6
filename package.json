@@ -1,0 +1,19 @@
+{
+  "name": "js-pluralsight-es6",
+  "version": "1.0.0",
+  "description": "Pluralsight Rapid ES6 training course",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedeadman782004/JS-Pluralsight-ES6.git"
+  },
+  "author": "Stephen Burgos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thedeadman782004/JS-Pluralsight-ES6/issues"
+  },
+  "homepage": "https://github.com/thedeadman782004/JS-Pluralsight-ES6#readme"
+}
