@@ -14,4 +14,6 @@ VARS.pushButton.addEventListener('click', function(){
     console.log(0b10); // Binary number
     clearPar();
     updatePar(`The best chocolate is ${VARS.milkChoc}, but ${VARS.whiteChoc} is also good.  And ${VARS.darkChoc} will do in a pinch.`);
+    VARS.myTask.showId();
+    VARS.myProject.saySomething();
 });
