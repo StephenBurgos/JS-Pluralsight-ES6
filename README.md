@@ -1,1 +1,1 @@
-Pluralsight Rapid ES6 training course
+#Coffee Snobs

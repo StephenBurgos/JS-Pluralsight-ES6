@@ -35,6 +35,7 @@ let { good : whiteChoc, best : milkChoc, okay : darkChoc } = Chocolate;
 let prices = [12,20,18];
 let maxPrice = Math.max(...prices);
 let myForOfString = "Hello World!";
+
 // START ////////////////////
 pushButton.addEventListener('click', function(){
     showCategories(123, 'search', 'advertising');
