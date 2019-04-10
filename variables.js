@@ -1,4 +1,5 @@
 import { Task, SoftwareProject } from "./classes.js";
+import { process } from "./usefulFuncs.js";
 
 let Chocolate = {
     good : "White Chocolate",
@@ -16,3 +17,4 @@ export const EVENT_SYMBOL = Symbol("test event");
 export let targetVar1 = {var1 : 7};
 export let targetVar2 = {var2 : 912};
 export let target = {};
+export let myGenerator = process();
