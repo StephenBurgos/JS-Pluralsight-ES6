@@ -12,3 +12,7 @@ export let myForOfString = "Hello World!";
 export let pushButton = document.getElementById("myButton");
 export let myTask = new Task(900);
 export let myProject = new SoftwareProject;
+export const EVENT_SYMBOL = Symbol("test event");
+export let targetVar1 = {var1 : 7};
+export let targetVar2 = {var2 : 912};
+export let target = {};
