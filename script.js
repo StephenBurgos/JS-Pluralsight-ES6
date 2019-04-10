@@ -4,7 +4,7 @@ let textArea = document.getElementById("paragraph");
 let pushButton = document.getElementById("myButton");
 //pushButton.style.display = <'inline','block',etc>
 
-// FUNCTIONS ////////////////
+// MAIN FUNCTIONS ////////////////
 function hideButton(button){
     button.style.display = 'none';
 }
@@ -15,6 +15,12 @@ function updatePar(newText = "Hello"){
     textArea.innerText += "  " + newText;
     console.log(newText);
 }
+function clearPar(){
+    textArea.innerText = "";
+    console.log("Paragraph cleared");
+}
+
+// PLURALSIGHT FUNCTIONS ////
 function showCategories(productID, ...categories){
     updatePar(categories);
 }
@@ -28,7 +34,4 @@ let maxPrice = Math.max(...prices);
 pushButton.addEventListener('click', function(){
     showCategories(123, 'search', 'advertising');
     updatePar(maxPrice);
-
 });
-
-// Left off at start of New ES6 Syntax > Object Literal Extensions
