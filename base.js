@@ -1,4 +1,6 @@
 "use strict";
+// Imports //////////////////
+
 // DOM VARS /////////////////
 let textArea = document.getElementById("paragraph");
 let pushButton = document.getElementById("myButton");

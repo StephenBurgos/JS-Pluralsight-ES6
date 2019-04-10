@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  entry: './script.js',
+  entry: './base.js',
   devServer: {
     historyApiFallback: true,
   },
@@ -18,7 +18,7 @@ module.exports = {
   },
   output: {
     path: __dirname,
-    filename: './script.min.js',
+    filename: './base.min.js',
   },
   resolve: {
     modules: [path.resolve('./src'), path.resolve('./node_modules')],
