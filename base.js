@@ -5,6 +5,7 @@ import * as VARS from './variables.js';
 
 // MAIN /////////////////////
 VARS.pushButton.addEventListener('click', function(){
+    FUNCS.clearPar();
     FUNCS.showCategories(123, 'search', 'advertising');
     FUNCS.updatePar(VARS.maxPrice);
     for (let letter of VARS.myForOfString){
@@ -30,7 +31,6 @@ VARS.pushButton.addEventListener('click', function(){
     FUNCS.updatePar(VARS.genArray);
     FUNCS.clearPar();
     FUNCS.asyncThen("Yay!", "Aww!");
-    FUNCS.asyncRace();
 });
 
 VARS.raceButton.addEventListener("click",function(){
@@ -38,8 +38,8 @@ VARS.raceButton.addEventListener("click",function(){
     FUNCS.letsRace(VARS.numberOfRaces);// this generates promise1 and promise2 but uses the same value every time.  So if they win the first one, they win them all
 });
 
-VARS.button3.addEventListener("clic",function(){
-    // New code here
+VARS.button3.addEventListener("click",function(){
+    FUNCS.clearPar();
 });
 
-// Rapid ES6 > Iterators, Generators and Promises > Review Promises and More Promise Features
+// Rapid ES6 > Arrays and Collections > Intro
