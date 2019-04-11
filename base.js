@@ -20,9 +20,15 @@ VARS.pushButton.addEventListener('click', function(){
     Object.assign(VARS.target, VARS.targetVar1, VARS.targetVar2);
     FUNCS.updatePar(VARS.target.var1 + " " + VARS.target.var2);
     FUNCS.updatePar("\u{1f30a}\u{1f3c4}\u{1f40b}") // Wave, Surfer, Whale emojis
+    VARS.numberPrompt = FUNCS.promptReturn("Enter an integer, fool!", "#");
     FUNCS.updatePar(VARS.myGenerator.next());
-    FUNCS.updatePar(VARS.myGenerator.next().value);
-
+    for (let i = VARS.myGenerator.next(VARS.numberPrompt).value; i <= 100; i = VARS.myGenerator.next().value){
+        VARS.genArray.push(i);
+    }
+    console.log(VARS.myGenerator.next().value);
+    FUNCS.clearPar();
+    FUNCS.updatePar(VARS.genArray);
+    FUNCS.clearPar();
 });
 
 // Rapid ES6 > Iterators, Generators and Promises > Review Promises and More Promise Features

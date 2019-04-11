@@ -18,3 +18,5 @@ export let targetVar1 = {var1 : 7};
 export let targetVar2 = {var2 : 912};
 export let target = {};
 export let myGenerator = process();
+export let numberPrompt;
+export const genArray = [];

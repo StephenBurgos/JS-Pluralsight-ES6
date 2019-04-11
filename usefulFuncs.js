@@ -12,14 +12,24 @@ export function clearPar(textArea = document.getElementById("paragraph")){
     console.log(`Cleared "${textArea.innerText}" from the text area.`)
     textArea.innerText = "";
 }
-
-// Pluralsight Functions
 export function showCategories(productID, ...categories){
     updatePar(categories);
 }
 export function *process(){
-    let nextId = 0;
+    let nextId = yield;
     while(true){
         yield nextId++;
+    }
+}
+export function promptReturn(string1, string2){
+    let number = prompt(string1, string2);
+    if (Number.parseInt(number) === 0){
+        return number;
+    }
+    else if (number === null || number === "" || !(Number.parseInt(number) % number === 0)) {
+        return NaN;
+    }
+    else {
+        return number;
     }
 }
