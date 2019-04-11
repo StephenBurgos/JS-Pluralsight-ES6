@@ -29,6 +29,17 @@ VARS.pushButton.addEventListener('click', function(){
     FUNCS.clearPar();
     FUNCS.updatePar(VARS.genArray);
     FUNCS.clearPar();
+    FUNCS.asyncThen("Yay!", "Aww!");
+    FUNCS.asyncRace();
+});
+
+VARS.raceButton.addEventListener("click",function(){
+    FUNCS.clearPar();
+    FUNCS.letsRace(VARS.numberOfRaces);// this generates promise1 and promise2 but uses the same value every time.  So if they win the first one, they win them all
+});
+
+VARS.button3.addEventListener("clic",function(){
+    // New code here
 });
 
 // Rapid ES6 > Iterators, Generators and Promises > Review Promises and More Promise Features

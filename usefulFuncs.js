@@ -1,3 +1,4 @@
+import * as VARS from "./variables.js";
 export function hideButton(button){
     button.style.display = 'none';
 }
@@ -31,5 +32,35 @@ export function promptReturn(string1, string2){
     }
     else {
         return number;
+    }
+}
+export function doAsync(){
+    let thisPromise = new Promise(function(resolve,reject){
+        setTimeout(function(){
+            resolve();
+        },1000);
+        setTimeout(function(){
+            reject();
+        },1500);
+    });
+    return thisPromise;
+}
+export function asyncThen(value,reason) {
+    doAsync().then(function(){
+        console.log("Passed!" + value);
+    },
+    function(){
+        console.log("Failed!" + reason);
+    })
+}
+export function asyncRace(){
+    Promise.race([VARS.promise1,VARS.promise2]).then(
+        function () {updatePar("promise1 wins!");},
+        function () {updatePar("promise2 wins!");}
+    );
+}
+export function letsRace(number = 10){
+    for (let i = 0; i < number; i++){
+        asyncRace();
     }
 }
