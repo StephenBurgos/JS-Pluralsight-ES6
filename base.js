@@ -45,7 +45,7 @@ VARS.button3.addEventListener("click",function(){
     FUNCS.updatePar(VARS.bufferArray.length);
     FUNCS.updatePar(VARS.bufferArray);
     FUNCS.clearPar();
-    FUNCS.updatePar(FUNCS.generateNumber(100));
+    FUNCS.updatePar(FUNCS.generateNumber(FUNCS.promptReturn("Enter a max value to check (once the generator passes this, it will return):","#")));
 });
 
 // Rapid ES6 > Arrays and Collections > Intro
