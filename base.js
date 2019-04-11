@@ -5,6 +5,7 @@ import * as VARS from './variables.js';
 
 // MAIN /////////////////////
 VARS.pushButton.addEventListener('click', function(){
+    FUNCS.hideButton();
     FUNCS.clearPar();
     FUNCS.showCategories(123, 'search', 'advertising');
     FUNCS.updatePar(VARS.maxPrice);
@@ -34,11 +35,13 @@ VARS.pushButton.addEventListener('click', function(){
 });
 
 VARS.raceButton.addEventListener("click",function(){
+    FUNCS.hideButton();
     FUNCS.clearPar();
     FUNCS.letsRace(VARS.numberOfRaces);// this generates promise1 and promise2 but uses the same value every time.  So if they win the first one, they win them all
 });
 
 VARS.button3.addEventListener("click",function(){
+    FUNCS.hideButton();
     FUNCS.clearPar();
     FUNCS.updatePar(VARS.myGenerator.next());
     FUNCS.fillBufferArray(VARS.bufferArray);
@@ -46,6 +49,11 @@ VARS.button3.addEventListener("click",function(){
     FUNCS.updatePar(VARS.bufferArray);
     FUNCS.clearPar();
     FUNCS.updatePar(FUNCS.generateNumber(FUNCS.promptReturn("Enter a max value to check (once the generator passes this, it will return):","#")));
+});
+
+VARS.button4.addEventListener("click",function(){
+    FUNCS.hideButton();
+    FUNCS.clearPar();
 });
 
 // Rapid ES6 > Arrays and Collections > Intro

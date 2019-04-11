@@ -1,6 +1,9 @@
 import * as VARS from "./variables.js";
-export function hideButton(button){
-    button.style.display = 'none';
+export function hideButton(){
+    VARS.pushButton.style.display = 'none';
+    VARS.raceButton.style.display = 'none';
+    VARS.button3.style.display = 'none';
+    VARS.button4.style.display = 'none';
 }
 export function showButton(button){
     button.sytyle.display = 'inline';

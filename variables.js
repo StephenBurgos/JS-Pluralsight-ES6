@@ -13,6 +13,7 @@ export let myForOfString = "Hello World!";
 export let pushButton = document.getElementById("myButton");
 export let raceButton = document.getElementById("raceButton");
 export let button3 = document.getElementById("button3");
+export let button4 = document.getElementById("button4");
 export let myTask = new Task(900);
 export let myProject = new SoftwareProject;
 export const EVENT_SYMBOL = Symbol("test event");
