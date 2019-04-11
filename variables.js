@@ -34,3 +34,5 @@ export let promise2 = new Promise(function(resolve,reject){
     },Math.floor(Math.random() * 5000));
 });
 export let numberOfRaces = 1;
+let buffer = new ArrayBuffer(260);
+export let bufferArray = new Uint8ClampedArray(buffer);

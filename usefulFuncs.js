@@ -64,3 +64,8 @@ export function letsRace(number = 10){
         asyncRace();
     }
 }
+export function fillBufferArray(array){
+    for(let i = 0; i < array.length; i++){
+        array[i] = VARS.myGenerator.next(0).value;
+    }
+}

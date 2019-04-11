@@ -40,6 +40,11 @@ VARS.raceButton.addEventListener("click",function(){
 
 VARS.button3.addEventListener("click",function(){
     FUNCS.clearPar();
+    FUNCS.updatePar(VARS.myGenerator.next());
+    FUNCS.fillBufferArray(VARS.bufferArray);
+    FUNCS.updatePar(VARS.bufferArray.length);
+    FUNCS.updatePar(VARS.bufferArray);
+    FUNCS.clearPar();
 });
 
 // Rapid ES6 > Arrays and Collections > Intro
