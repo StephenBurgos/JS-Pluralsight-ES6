@@ -69,3 +69,11 @@ export function fillBufferArray(array){
         array[i] = VARS.myGenerator.next(0).value;
     }
 }
+export function generateNumber(maximum){
+    let variable = Math.random();
+    while (variable < maximum){
+        variable /= Math.random();
+        console.log(variable);
+    }
+    return Math.round(variable * 100) / 100;
+}

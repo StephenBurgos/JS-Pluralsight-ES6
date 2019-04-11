@@ -45,6 +45,7 @@ VARS.button3.addEventListener("click",function(){
     FUNCS.updatePar(VARS.bufferArray.length);
     FUNCS.updatePar(VARS.bufferArray);
     FUNCS.clearPar();
+    FUNCS.updatePar(FUNCS.generateNumber(100));
 });
 
 // Rapid ES6 > Arrays and Collections > Intro
